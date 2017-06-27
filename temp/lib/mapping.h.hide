@@ -1,0 +1,4 @@
+/* mapping.h - demonstrate library use. */
+ 
+ 
+void my_cnt(void);

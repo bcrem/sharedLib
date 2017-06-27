@@ -1,0 +1,6 @@
+cc -fPIC -Wall -g -c mapping.c
+cc -g -shared -Wl,-soname,mapping.so.0 \-o mapping.so.0.0 mapping.o -lc
+
+cc -Wall -g -c nlcnt.c
+cc -g -o nlcnt nlcnt.o -ldl
+LD_LIBRARY_PATH="." ./nlcnt
